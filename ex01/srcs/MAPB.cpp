@@ -6,7 +6,7 @@
 /*   By: debian <debian@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 13:43:40 by rkassel           #+#    #+#             */
-/*   Updated: 2025/01/02 08:42:59 by debian           ###   ########.fr       */
+/*   Updated: 2025/01/02 09:31:46 by debian           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int main( void )
 		}
 		else if (buff.compare("EXIT") == 0 || std::cin.eof())
 		{
-			if (buff.find('\0') && buff.find("EXIT") == (size_t)-1)
+			if (std::cin.eof())
 				std::cerr << std::endl << "Program exited: CTRL D is forbidden!" << std::endl << std::endl;
 			return (0);
 		}
