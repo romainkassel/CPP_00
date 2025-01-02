@@ -1,4 +1,4 @@
-C++ - Module 00
+# C++ - Module 00
 
 Main notions of CPP language covered within this module:
 - Namespaces
